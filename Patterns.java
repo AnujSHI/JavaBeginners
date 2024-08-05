@@ -128,6 +128,74 @@ void butterFlyPattern() {
 		System.out.println();
 	}
 }
+void solidRombusPattern() {
+	int n=6;
+	for(int i=1;i<n;i++) {
+		int space = n-i;
+		for(int j=1;j<space;j++) {
+			System.out.print(" ");
+		}
+		for(int j=1;j<n;j++) {
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+}
+void pyramidPattern() {
+	int n=5;
+	for(int i=1;i<=n;i++) {
+		int space = n-i;
+		for(int j=1;j<=space;j++) {
+			System.out.print(" ");
+		}
+		for(int j=1;j<=i;j++) {
+			System.out.print(i);
+		}
+		System.out.println();
+	}
+}
+void pallindromPyramidPattern() {
+	int n=5;
+	for(int i=1;i<=n;i++) {
+		for(int j=1;j<=n-i;j++) {
+			System.out.print(" ");
+		}
+		for(int j=i;j>=1;j--) {
+			System.out.print(j);
+		}
+		for(int j=2;j<=i;j++) {
+			System.out.print(j);
+		}
+		System.out.println();
+	}
+}
+void diamondPattern() {
+	int n=5;
+	for(int i=1;i<=n;i++) {
+		for(int j=1;j<=n-i;j++) {
+			System.out.print(" ");
+		}
+		for(int j=i;j>=1;j--) {
+			System.out.print("*");
+		}
+		for(int j=2;j<=i;j++) {
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+	for(int i=n;i>=1;i--) {
+		for(int j=1;j<=n-i;j++) {
+			System.out.print(" ");
+		}
+		for(int j=i;j>=1;j--) {
+			System.out.print("*");
+		}
+		for(int j=2;j<=i;j++) {
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
@@ -140,7 +208,11 @@ void butterFlyPattern() {
 		//p.pattern6();
 		//p.pattern7();
 		//p.pattern8();
-		p.butterFlyPattern();
+		// p.butterFlyPattern();
+		//p.solidRombusPattern();
+		//p.pyramidPattern();
+		//p.pallindromPyramidPattern();
+		p.diamondPattern();
 	}
 
 }
