@@ -213,6 +213,7 @@ void diamondPattern() {
 		//p.pyramidPattern();
 		//p.pallindromPyramidPattern();
 		p.diamondPattern();
+		//hello dear this was commited
 	}
 
 }
